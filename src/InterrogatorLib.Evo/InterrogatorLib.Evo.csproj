@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net45</TargetFrameworks>
+    <NoWarn>$(NoWarn);CS1591</NoWarn>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PackageId>RFIDApplied.InterrogatorLib.Evo</PackageId>
+    <Authors>Dmitry Shalkhakov, Artyom Shalkhakov</Authors>
+    <Company>RFID Applied Kazakhstan</Company>
+    <Product>RFIDApplied.InterrogatorLib.Evo</Product>
+    <Description>Interrogator driver for iDTRONIC Evo</Description>
+    <Copyright>2016-2017 RFID Applied Kazakhstan</Copyright>
+    <RepositoryUrl>https://github.com/rfid-applied/InterrogatorLib</RepositoryUrl>
+    <RepositoryType>GitHub</RepositoryType>
+    <PackageTags>net45 netstandard</PackageTags>
+    <AssemblyName>RFIDApplied.InterrogatorLib.Evo</AssemblyName>
+    <RootNamespace>RFIDApplied.InterrogatorLib.Evo</RootNamespace>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyCopyrightAttribute>false</GenerateAssemblyCopyrightAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <GenerateAssemblyDescriptionAttribute>false</GenerateAssemblyDescriptionAttribute>
+    <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
+    <GenerateAssemblyInformationalVersionAttribute>false</GenerateAssemblyInformationalVersionAttribute>
+    <GenerateAssemblyFileVersionAttribute>false</GenerateAssemblyFileVersionAttribute>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+  </PropertyGroup>
+  <ItemGroup Condition="'$(TargetFramework)' == 'net45'">
+    <PackageReference Include="System.Diagnostics.Tracing" Version="4.3.0" />
+		<Reference Include="System.Management" />
+	</ItemGroup>
+  <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0'">
+    <PackageReference Include="System.Diagnostics.Tracing" Version="4.3.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\InterrogatorLib\InterrogatorLib.NETStandard.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="SafeSerialPort.cs">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
