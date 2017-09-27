@@ -1,0 +1,305 @@
+{
+  "homepages": [],
+  "source_base_path": "D:/projects/InterrogatorLib",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Conceptual",
+      "source_relative_path": "LICENSE.md",
+      "output": {
+        ".html": {
+          "relative_path": "LICENSE.html",
+          "hash": "rmD6DdJ7rXmmJ9q98BwgiA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "README.md",
+      "output": {
+        ".html": {
+          "relative_path": "README.html",
+          "hash": "6VTizJmDY5ERiTdlzqs9mg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/InterrogatorLib.DecodeError.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/InterrogatorLib.DecodeError.html",
+          "hash": "CHkigIVTOsIaE0wqfn5PNA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/InterrogatorLib.Decoder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/InterrogatorLib.Decoder.html",
+          "hash": "CSbl5YvEMB/Ut1GQM5eSMQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/InterrogatorLib.EPC_PC.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/InterrogatorLib.EPC_PC.html",
+          "hash": "Howg9h1S7v/RLcyNNCpCIA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/InterrogatorLib.Encoder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/InterrogatorLib.Encoder.html",
+          "hash": "K4bJdFGoUAAPfxnweY4GOA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/InterrogatorLib.IReaderLowLevel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/InterrogatorLib.IReaderLowLevel.html",
+          "hash": "3Kywp7gQ/FvZ6QMZFhBU8g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/InterrogatorLib.IdentityEPCURI_SGTIN.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/InterrogatorLib.IdentityEPCURI_SGTIN.html",
+          "hash": "cntEqr/UzLZ116wXTJdHVA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/InterrogatorLib.MCS.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/InterrogatorLib.MCS.html",
+          "hash": "ufR52KY45ParC4i2rBTzuA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/InterrogatorLib.MockReaderLowLevel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/InterrogatorLib.MockReaderLowLevel.html",
+          "hash": "LZX73TxAL2FxYakYVOxDyQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/InterrogatorLib.MockTag.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/InterrogatorLib.MockTag.html",
+          "hash": "WbBUVXXh+vFlU2/FLhY99w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/InterrogatorLib.TID.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/InterrogatorLib.TID.html",
+          "hash": "fNo8l8lneUS6dovo+xEKGQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/InterrogatorLib.TagEPCURI_SGTIN.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/InterrogatorLib.TagEPCURI_SGTIN.html",
+          "hash": "XrD1T2k03HiKyk9/t2WwkQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/InterrogatorLib.TagRaw.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/InterrogatorLib.TagRaw.html",
+          "hash": "nM/KmRHkHjSbTESsnKeVew=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/InterrogatorLib.Utility.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/InterrogatorLib.Utility.html",
+          "hash": "zf6vV+t1vvow3nM8oMvuzA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/InterrogatorLib.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/InterrogatorLib.html",
+          "hash": "rK8Qf85P4Ben4zm047qNcA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "Biav+VbS5CshwBpOB073+Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/articles/getting_started.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/articles/getting_started.html",
+          "hash": "eA9UX6tkHfo/VkjJODpMTA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "doc/articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "doc/articles/toc.html",
+          "hash": "+9uRbfVg8pkE4hW8Wd7B/g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/images/logo.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/images/logo.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "IIIgwLM4J7tXjaWaqQeWrA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build"
+      },
+      "processors": {
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build"
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build"
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "RestApiDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
+        "incrementalPhase": "postProcessing"
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

@@ -1,6 +1,0 @@
-- name: Home
-  href: README.md
-- name: Articles
-  href: doc/articles/getting_started.md
-- name: Api Documentation
-  href: api/InterrogatorLib.yml

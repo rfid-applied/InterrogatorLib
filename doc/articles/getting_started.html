@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Getting Started | InterrogatorLib </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Getting Started | InterrogatorLib ">
+    <meta name="generator" content="docfx 2.24.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../doc/images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="getting-started">Getting Started</h1>
+
+<h2 id="uhf-rfid-tag-memory">UHF RFID tag memory</h2>
+<p>The tag memory is conceptually comprised of the following distinct
+memory banks:</p>
+<ul>
+<li>reserved memory (something tag-related that apps don&#39;t usually work with)</li>
+<li><em>TID</em>: tag identification, for looking up information about the tag
+(maker, model, etc.); sometimes this includes a serial which is
+guaranteed by the vendor to be unique among the tags produced by the
+vendor</li>
+<li><em>EPC</em>: this is used for storing the <em>Electronic Product Code</em></li>
+<li><em>USER</em>: this is usually blank, and can be used by the apps; although
+there exist a standard for it, all bets are off</li>
+</ul>
+<p>All memory banks except TID and reserved are usually writable.</p>
+<h2 id="a-word-about-epcs">A word about EPCs</h2>
+<p>Depending on the vendor, some tags coming fresh off the factory will
+have an empty EPC, or EPC that is only partially filled in. The Tag
+Data Structure standard by EPCglobal describes the binary format and
+the encoding/decoding procedure for the EPC memory bank.</p>
+<p>SGTIN (Serialized GTIN) is the most useful scheme for EPCs. It consists
+of</p>
+<ul>
+<li>a <em>GTIN-14</em> (i.e., a barcode, itself consisting of company prefix,
+assigned by GS1, and the item reference)</li>
+<li>and a <em>serial number</em> (this one usually comes from an information system&#39;s
+database, and is used for assignign consecutively increasing numbers)</li>
+</ul>
+<p>Taken together, these pieces help to identify a particular <em>instance</em>
+of a <em>product</em>.</p>
+<h2 id="different-representations-of-epcs">Different representations of EPCs</h2>
+<p>A given SGTIN EPC can be represented differently:</p>
+<ul>
+<li>written on the tag in a compact SGTIN-192 form</li>
+<li>reside in memory of a computer program in a textual SGTIN Identity
+URI form, or SGTIN Tag URI form</li>
+</ul>
+<p><em>Tag URI</em>: this contains the full decoded contents of an EPC memory
+bank, making roundtrip between the URI and the memory bank possible.</p>
+<p><em>Identity URI</em>: this contains only the application-specific data of a
+Tag URI (or the EPC memory bank); so it is intended for identification
+(roundtrip is only possible if you are okay with reconstructing some
+missing information from the identity URI).</p>
+<p>Here&#39;s a hopefully helpful diagram:</p>
+<p>EPC memory bank &lt;=&gt; Tag URI &lt;=&gt; Identity URI</p>
+<h2 id="serialization">Serialization</h2>
+<p>Remember the <em>serial number</em> that is present in SGTIN? It can be
+obtained in the following ways:</p>
+<ul>
+<li>from a central database</li>
+<li>from the chip&#39;s TID memory (via MCS)</li>
+</ul>
+<p>Assuming a suitable chip, via MCS an algorithm can extract the serial
+number from the TID memory bank, and write it to the tag; no central
+database is necessary.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright 2017, RFID Applied Kazakhstan
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

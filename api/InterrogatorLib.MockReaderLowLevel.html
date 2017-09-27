@@ -1,0 +1,679 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class MockReaderLowLevel
+   | InterrogatorLib </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class MockReaderLowLevel
+   | InterrogatorLib ">
+    <meta name="generator" content="docfx 2.24.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../doc/images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="InterrogatorLib.MockReaderLowLevel">
+  
+  
+  <h1 id="InterrogatorLib_MockReaderLowLevel" data-uid="InterrogatorLib.MockReaderLowLevel" class="text-break">Class MockReaderLowLevel
+  </h1>
+  <div class="markdown level0 summary"><p>Mock low-level reader.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">MockReaderLowLevel</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="InterrogatorLib.IReaderLowLevel.html">IReaderLowLevel</a></div>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="InterrogatorLib.html">InterrogatorLib</a></h6>
+  <h6><strong>Assembly</strong>: InterrogatorLibBase.dll</h6>
+  <h5 id="InterrogatorLib_MockReaderLowLevel_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MockReaderLowLevel : IReaderLowLevel, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="InterrogatorLib_MockReaderLowLevel__ctor_" data-uid="InterrogatorLib.MockReaderLowLevel.#ctor*"></a>
+  <h4 id="InterrogatorLib_MockReaderLowLevel__ctor_InterrogatorLib_MockTag___" data-uid="InterrogatorLib.MockReaderLowLevel.#ctor(InterrogatorLib.MockTag[])">MockReaderLowLevel(MockTag[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MockReaderLowLevel(MockTag[] mocktags)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="InterrogatorLib.MockTag.html">MockTag</a>[]</td>
+        <td><span class="parametername">mocktags</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="InterrogatorLib_MockReaderLowLevel__ctor_" data-uid="InterrogatorLib.MockReaderLowLevel.#ctor*"></a>
+  <h4 id="InterrogatorLib_MockReaderLowLevel__ctor_System_Collections_Generic_IEnumerable_System_Byte____" data-uid="InterrogatorLib.MockReaderLowLevel.#ctor(System.Collections.Generic.IEnumerable{System.Byte[]})">MockReaderLowLevel(IEnumerable&lt;Byte[]&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MockReaderLowLevel(IEnumerable&lt;byte[]&gt; epcs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Byte</span>[]&gt;</td>
+        <td><span class="parametername">epcs</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="InterrogatorLib_MockReaderLowLevel__ctor_" data-uid="InterrogatorLib.MockReaderLowLevel.#ctor*"></a>
+  <h4 id="InterrogatorLib_MockReaderLowLevel__ctor_System_String___" data-uid="InterrogatorLib.MockReaderLowLevel.#ctor(System.String[])">MockReaderLowLevel(String[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MockReaderLowLevel(string[] hexstringtags)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">hexstringtags</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="InterrogatorLib_MockReaderLowLevel_ChunkSize_" data-uid="InterrogatorLib.MockReaderLowLevel.ChunkSize*"></a>
+  <h4 id="InterrogatorLib_MockReaderLowLevel_ChunkSize" data-uid="InterrogatorLib.MockReaderLowLevel.ChunkSize">ChunkSize</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ChunkSize { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="InterrogatorLib_MockReaderLowLevel_Dispose_" data-uid="InterrogatorLib.MockReaderLowLevel.Dispose*"></a>
+  <h4 id="InterrogatorLib_MockReaderLowLevel_Dispose" data-uid="InterrogatorLib.MockReaderLowLevel.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  
+  
+  <a id="InterrogatorLib_MockReaderLowLevel_Initialize_" data-uid="InterrogatorLib.MockReaderLowLevel.Initialize*"></a>
+  <h4 id="InterrogatorLib_MockReaderLowLevel_Initialize" data-uid="InterrogatorLib.MockReaderLowLevel.Initialize">Initialize()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Initialize()</code></pre>
+  </div>
+  
+  
+  <a id="InterrogatorLib_MockReaderLowLevel_IsReady_" data-uid="InterrogatorLib.MockReaderLowLevel.IsReady*"></a>
+  <h4 id="InterrogatorLib_MockReaderLowLevel_IsReady" data-uid="InterrogatorLib.MockReaderLowLevel.IsReady">IsReady()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsReady()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="InterrogatorLib_MockReaderLowLevel_ReadBytes_" data-uid="InterrogatorLib.MockReaderLowLevel.ReadBytes*"></a>
+  <h4 id="InterrogatorLib_MockReaderLowLevel_ReadBytes_System_Object_System_Int32_System_Int32_System_Int32_System_Byte____" data-uid="InterrogatorLib.MockReaderLowLevel.ReadBytes(System.Object,System.Int32,System.Int32,System.Int32,System.Byte[]@)">ReadBytes(Object, Int32, Int32, Int32, out Byte[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ReadBytes(object tag0, int membank, int offset, int count, out byte[] arr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">tag0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">membank</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">offset</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">count</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">arr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="InterrogatorLib_MockReaderLowLevel_SingulateTag_" data-uid="InterrogatorLib.MockReaderLowLevel.SingulateTag*"></a>
+  <h4 id="InterrogatorLib_MockReaderLowLevel_SingulateTag" data-uid="InterrogatorLib.MockReaderLowLevel.SingulateTag">SingulateTag()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object SingulateTag()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="InterrogatorLib_MockReaderLowLevel_SingulateTagAssisted_" data-uid="InterrogatorLib.MockReaderLowLevel.SingulateTagAssisted*"></a>
+  <h4 id="InterrogatorLib_MockReaderLowLevel_SingulateTagAssisted_System_Int32_" data-uid="InterrogatorLib.MockReaderLowLevel.SingulateTagAssisted(System.Int32)">SingulateTagAssisted(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object SingulateTagAssisted(int tagNr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">tagNr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="InterrogatorLib_MockReaderLowLevel_SplitToLines_" data-uid="InterrogatorLib.MockReaderLowLevel.SplitToLines*"></a>
+  <h4 id="InterrogatorLib_MockReaderLowLevel_SplitToLines_System_String_" data-uid="InterrogatorLib.MockReaderLowLevel.SplitToLines(System.String)">SplitToLines(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;string&gt; SplitToLines(string input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="InterrogatorLib_MockReaderLowLevel_StringToByteArray_" data-uid="InterrogatorLib.MockReaderLowLevel.StringToByteArray*"></a>
+  <h4 id="InterrogatorLib_MockReaderLowLevel_StringToByteArray_System_String_" data-uid="InterrogatorLib.MockReaderLowLevel.StringToByteArray(System.String)">StringToByteArray(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] StringToByteArray(string hex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">hex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="InterrogatorLib_MockReaderLowLevel_SubArray_" data-uid="InterrogatorLib.MockReaderLowLevel.SubArray*"></a>
+  <h4 id="InterrogatorLib_MockReaderLowLevel_SubArray__1___0___System_Int32_System_Int32_" data-uid="InterrogatorLib.MockReaderLowLevel.SubArray``1(``0[],System.Int32,System.Int32)">SubArray&lt;T&gt;(T[], Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T[] SubArray&lt;T&gt;(T[] data, int index, int length)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">length</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="InterrogatorLib_MockReaderLowLevel_WriteBytes_" data-uid="InterrogatorLib.MockReaderLowLevel.WriteBytes*"></a>
+  <h4 id="InterrogatorLib_MockReaderLowLevel_WriteBytes_System_Object_System_Int32_System_Int32_System_Int32_System_Byte___" data-uid="InterrogatorLib.MockReaderLowLevel.WriteBytes(System.Object,System.Int32,System.Int32,System.Int32,System.Byte[])">WriteBytes(Object, Int32, Int32, Int32, Byte[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool WriteBytes(object tag0, int membank, int offset, int count, byte[] arr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">tag0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">membank</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">offset</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">count</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">arr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="InterrogatorLib.IReaderLowLevel.html">IReaderLowLevel</a>
+  </div>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="InterrogatorLib.Decoder.html#InterrogatorLib_Decoder_ReadTID_InterrogatorLib_IReaderLowLevel_System_Object_InterrogatorLib_TID__">Decoder.ReadTID(IReaderLowLevel, Object, out TID)</a>
+  </div>
+  <div>
+      <a class="xref" href="InterrogatorLib.Decoder.html#InterrogatorLib_Decoder_ReadEPC_PC_InterrogatorLib_IReaderLowLevel_System_Object_InterrogatorLib_EPC_PC__">Decoder.ReadEPC_PC(IReaderLowLevel, Object, out EPC_PC)</a>
+  </div>
+  <div>
+      <a class="xref" href="InterrogatorLib.Decoder.html#InterrogatorLib_Decoder_ReadEPC_SGTIN_InterrogatorLib_IReaderLowLevel_System_Object_InterrogatorLib_TagEPCURI_SGTIN__">Decoder.ReadEPC_SGTIN(IReaderLowLevel, Object, out TagEPCURI_SGTIN)</a>
+  </div>
+  <div>
+      <a class="xref" href="InterrogatorLib.Decoder.html#InterrogatorLib_Decoder_ReadEPC_Raw_InterrogatorLib_IReaderLowLevel_System_Object_InterrogatorLib_TagRaw__">Decoder.ReadEPC_Raw(IReaderLowLevel, Object, out TagRaw)</a>
+  </div>
+  <div>
+      <a class="xref" href="InterrogatorLib.Decoder.html#InterrogatorLib_Decoder_ReadEPCURI_InterrogatorLib_IReaderLowLevel_System_Object_System_String__">Decoder.ReadEPCURI(IReaderLowLevel, Object, out String)</a>
+  </div>
+  <div>
+      <a class="xref" href="InterrogatorLib.Encoder.html#InterrogatorLib_Encoder_WriteEPC_InterrogatorLib_IReaderLowLevel_System_Object_InterrogatorLib_TagEPCURI_SGTIN_">Encoder.WriteEPC(IReaderLowLevel, Object, TagEPCURI_SGTIN)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright 2017, RFID Applied Kazakhstan
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
